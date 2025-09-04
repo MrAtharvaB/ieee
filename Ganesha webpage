@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Ganesh Mandala - Ganpati Bappa Morya</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating particles background -->
+    <div class="particles-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Main mandala container -->
+    <div class="mandala-container">
+        <!-- Rotating mandala background -->
+        <div class="mandala-background">
+            <div class="mandala-ring ring-1"></div>
+            <div class="mandala-ring ring-2"></div>
+            <div class="mandala-ring ring-3"></div>
+            <div class="mandala-ring ring-4"></div>
+        </div>
+
+        <!-- Central Ganesha -->
+        <div class="ganesha-center">
+            <div class="ganesha-icon">🐘</div>
+            <h1 class="ganesha-title">श्री गणेश</h1>
+            <p class="ganesha-subtitle">विघ्नहर्ता</p>
+        </div>
+
+        <!-- Interactive mandala sections -->
+        <div class="mandala-section section-1" data-section="ganesha-symbolism">
+            <div class="section-icon">🐘</div>
+        </div>
+        <div class="mandala-section section-2" data-section="festival-significance">
+            <div class="section-icon">🎉</div>
+        </div>
+        <div class="mandala-section section-3" data-section="traditional-blessings">
+            <div class="section-icon">🕉️</div>
+        </div>
+        <div class="mandala-section section-4" data-section="festival-foods">
+            <div class="section-icon">🥟</div>
+        </div>
+        <div class="mandala-section section-5" data-section="rituals-customs">
+            <div class="section-icon">📿</div>
+        </div>
+        <div class="mandala-section section-6" data-section="eco-awareness">
+            <div class="section-icon">🌱</div>
+        </div>
+        <div class="mandala-section section-7" data-section="wisdom-quotes">
+            <div class="section-icon">💡</div>
+        </div>
+        <div class="mandala-section section-8" data-section="cultural-unity">
+            <div class="section-icon">👥</div>
+        </div>
+    </div>
+
+    <!-- Floating Diyas -->
+    <div class="diya diya-1">
+        <div class="diya-base"></div>
+        <div class="diya-flame"></div>
+    </div>
+    <div class="diya diya-2">
+        <div class="diya-base"></div>
+        <div class="diya-flame"></div>
+    </div>
+    <div class="diya diya-3">
+        <div class="diya-base"></div>
+        <div class="diya-flame"></div>
+    </div>
+    <div class="diya diya-4">
+        <div class="diya-base"></div>
+        <div class="diya-flame"></div>
+    </div>
+
+    <!-- Floating decorative elements -->
+    <div class="floating-element flower-1">🌸</div>
+    <div class="floating-element flower-2">🏵️</div>
+    <div class="floating-element laddu-1">🟡</div>
+    <div class="floating-element laddu-2">🍯</div>
+    <div class="floating-element lotus-1">🪷</div>
+    <div class="floating-element lotus-2">🌺</div>
+
+    <!-- Popup Modal -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-content">
+            <button class="popup-close" id="popupClose">&times;</button>
+            <h2 class="popup-title" id="popupTitle"></h2>
+            <div class="popup-body" id="popupBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
